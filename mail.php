@@ -19,7 +19,7 @@ $headers = "From:" . $email;
 $headers = "Content-type: text/html\r\n";
 $headers = "Reply-To:" . $email;
 
-mail($to,$subject,$message,$headers);
+mail($to,$subject,$email_message,$headers);
 header('Location : index.html');
 echo run();
 ?>
