@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST["submit"])) {
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
@@ -22,5 +23,6 @@ $headers = "Reply-To:" . $email;
 mail($to,$subject,$email_message,$headers);
 header('Location : index.html');
 echo run();
+}
 ?>
 
