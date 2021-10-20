@@ -26,10 +26,12 @@ Author: GrayGrids
         var logo = document.querySelector('.navbar-brand img')
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
-          logo.src = 'assets/haba-black-logo.svg';
+          logo.src = 'assets/images/Haba-Logo-PNG.png';
+          logo.style = 'max-width: 120px';
         } else {
           header_navbar.classList.remove("sticky");
-          logo.src = 'assets/haba-white-logo.svg';
+          logo.src = 'assets/images/Haba-Logo-White.png';
+          logo.style = 'max-width: 120px';
         }
 
         // show or hide the back-top-top button
